@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Chokho Sawaad</title>
+    <title>Chokho Suwaad</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -26,18 +26,18 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="{{asset('web/images/images_1/logo.png')}}" width="94px;">Chokho Swaad</a>
+            <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('web/images/images_1/logo.png')}}" width="94px;">Chokho Suwaad</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
             </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
-                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item {{ request()->is('/') ? 'active' : '' }}"><a href="{{url('/')}}" class="nav-link">Home</a></li>
+                    <li class="nav-item {{ request()->is('product') ? 'active' : '' }}"><a href="{{route('product')}}" class="nav-link">Product</a></li>
+                    <li class="nav-item {{ request()->is('service') ? 'active' : '' }}"><a href="{{route('service')}}" class="nav-link">Services</a></li>
+                    <li class="nav-item {{ request()->is('blog*') ? 'active' : '' }}"><a href="{{route('blog')}}" class="nav-link">Blog</a></li>
+                    <li class="nav-item {{ request()->is('our-story') ? 'active' : '' }}"><a href="{{route('our-story')}}" class="nav-link">Our Story</a></li>
+                    <li class="nav-item {{ request()->is('contact') ? 'active' : '' }}"><a href="{{route('contact')}}" class="nav-link">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -54,9 +54,9 @@
                         <h2 class="ftco-heading-2">About Us</h2>
                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.twitter.com/@chokhoswaad01"><span class="icon-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.facebook.com/@chokhoswaad01"><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.youtube.com/@ChokhoSwaad"><span class="icon-youtube"></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">Recent Blog</h2>
                         <div class="block-21 mb-4 d-flex">
-                            <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+                            <a class="blog-img mr-4" style="background-image: url(web/images/image_1.jpg);"></a>
                             <div class="text">
                                 <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
                                 <div class="meta">
@@ -75,7 +75,7 @@
                             </div>
                         </div>
                         <div class="block-21 mb-4 d-flex">
-                            <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
+                            <a class="blog-img mr-4" style="background-image: url(web/images/image_2.jpg);"></a>
                             <div class="text">
                                 <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
                                 <div class="meta">
@@ -103,8 +103,8 @@
                         <h2 class="ftco-heading-2">Have a Questions?</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+                                <li><span class="icon icon-map-marker"></span><span class="text">Rajgarh, Churu, Rajasthan</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91 968 087 7578</span></a></li>
                                 <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
                             </ul>
                         </div>

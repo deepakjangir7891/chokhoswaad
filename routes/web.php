@@ -21,3 +21,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/our-story', 'ContentController@about')->name('our-story');
+Route::get('/contact', 'ContentController@contact')->name('contact');
+Route::get('/blog', 'ContentController@blog')->name('blog');
+Route::get('/blog/{slug}', 'ContentController@showBlog')->name('showBlog');
+Route::get('/service', 'ContentController@service')->name('service');
+Route::get('/product', 'ContentController@product')->name('product');
