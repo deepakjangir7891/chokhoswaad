@@ -21,12 +21,14 @@
     <link rel="stylesheet" href="{{asset('web/css/flaticon.css')}}">
     <link rel="stylesheet" href="{{asset('web/css/icomoon.css')}}">
     <link rel="stylesheet" href="{{asset('web/css/style.css')}}">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="{{asset('web/images/images_1/logo.png')}}" width="94px;">Chokho Suwad</a>
+            <a class="navbar-brand" href="index.html"><img src="{{asset('web/images/images_1/logo1.png')}}" width="94px;">Chokho Suwad</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
             </button>
@@ -101,13 +103,13 @@
                                 </a>
                 
                                 <!-- Dashboard -->
-                                <a class="dropdown-item"
+                                {{-- <a class="dropdown-item"
                                     href="{{ url('/dashboard') }}">
                 
                                     <span class="icon-dashboard mr-2"></span>
                                     Dashboard
                 
-                                </a>
+                                </a> --}}
                 
                                 <div class="dropdown-divider"></div>
                 
@@ -227,7 +229,7 @@
 
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen">
-        <img src="{{ asset('web/images/images_1/logo.png') }}" alt="Loading">
+        <img src="{{ asset('web/images/images_1/logo1.png') }}" alt="Loading">
     </div>
 
     <style>
