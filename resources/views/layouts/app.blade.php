@@ -26,18 +26,117 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="{{asset('web/images/images_1/logo.png')}}" width="94px;">Chokho Swaad</a>
+            <a class="navbar-brand" href="index.html"><img src="{{asset('web/images/images_1/logo.png')}}" width="94px;">Chokho Suwad</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
             </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
-                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+
+                    <li class="nav-item active">
+                        <a href="{{ url('/') }}" class="nav-link">Home</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="{{ url('/menu') }}" class="nav-link">Menu</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="{{ url('/services') }}" class="nav-link">Services</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="{{ url('/blog') }}" class="nav-link">Blog</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="{{ url('/about') }}" class="nav-link">About</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href="{{ url('/contact') }}" class="nav-link">Contact</a>
+                    </li>
+                
+                    @guest
+                
+                        <li class="nav-item">
+                            <a href="{{ route('login') }}" class="nav-link">
+                                Login
+                            </a>
+                        </li>
+                
+                        <li class="nav-item">
+                            <a href="{{ route('register') }}" class="nav-link">
+                                Register
+                            </a>
+                        </li>
+                
+                    @else
+                
+                        <!-- Profile Dropdown -->
+                        <li class="nav-item dropdown">
+                
+                            <a class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                
+                                <span class="icon-user"></span>
+                                {{ Auth::user()->name }}
+                
+                            </a>
+                
+                            <div class="dropdown-menu dropdown-menu-right">
+                
+                                <!-- Profile -->
+                                <a class="dropdown-item"
+                                    href="{{ url('/profile') }}">
+                
+                                    <span class="icon-user mr-2"></span>
+                                    My Profile
+                
+                                </a>
+                
+                                <!-- Dashboard -->
+                                <a class="dropdown-item"
+                                    href="{{ url('/dashboard') }}">
+                
+                                    <span class="icon-dashboard mr-2"></span>
+                                    Dashboard
+                
+                                </a>
+                
+                                <div class="dropdown-divider"></div>
+                
+                                <!-- Logout -->
+                                <a class="dropdown-item"
+                                    href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
+                
+                                    <span class="icon-sign-out mr-2"></span>
+                                    Logout
+                
+                                </a>
+                
+                                <form id="logout-form"
+                                    action="{{ route('logout') }}"
+                                    method="POST"
+                                    style="display: none;">
+                
+                                    @csrf
+                
+                                </form>
+                
+                            </div>
+                
+                        </li>
+                
+                    @endguest
+                
                 </ul>
             </div>
         </div>
