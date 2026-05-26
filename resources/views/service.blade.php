@@ -1,15 +1,16 @@
 @extends('layouts.app')
 @section('content')
-<section class="home-slider owl-carousel img" style="background-image: url(web/images/images_1/banner_1.png);background-position-y:bottom ">
 
-    <div class="slider-item" style="background-image: url(web/images/images_1/banner_1.png);">
+<section class="home-slider owl-carousel img">
+
+    <div class="slider-item" style="background-image: url(web/images/images_1/masaala.png);">
         <div class="overlay"></div>
         <div class="container">
             <div class="row slider-text justify-content-center align-items-center">
 
                 <div class="col-md-7 col-sm-12 text-center ftco-animate">
-                    <h1 class="mb-3 mt-5 bread">Services</h1>
-                    <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Services</span></p>
+                    <h1 class="mb-3 mt-5 bread">Service</h1>
+                    <!-- <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Service</span></p> -->
                 </div>
 
             </div>
@@ -110,7 +111,7 @@
                 <div class="menu-wrap">
                     <a href="#" class="menu-img img mb-4" style="background-image: url(web/images/images_1/green_chilli.png);"></a>
                     <div class="text">
-                        <h3><a href="#">Green Pickel</a></h3>
+                        <h3><a href="#">Green Chilli</a></h3>
                         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
                         <p class="price"><span>$2.90</span></p>
                         <p><a href="#" class="btn btn-white btn-outline-white">Add to cart</a></p>

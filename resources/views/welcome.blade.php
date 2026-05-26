@@ -12,7 +12,7 @@
                     <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
                 </div> -->
                 <div class="col-md-12 ftco-animate">
-                    <img src="{{asset('web/images/images_1/banner_1.png')}}" class="img-fluid" alt="" style="height: 750px;">
+                    <img src="{{asset('web/images/images_1/banner_1.png')}}" class="img-fluid slider-banner" alt="">
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@
             <div class="row slider-text align-items-center" data-scrollax-parent="true">
 
                 <div class="col-md-12 ftco-animate">
-                    <img src="{{asset('web/images/images_1/banner_4.png')}}" class="img-fluid" alt="" style="height: 750px;">
+                    <img src="{{asset('web/images/images_1/banner_4.png')}}" class="img-fluid slider-banner" alt="">
                 </div>
 
             </div>
@@ -34,9 +34,8 @@
         <div class="overlay"></div>
         <div class="container-fluid">
             <div class="row slider-text align-items-center" data-scrollax-parent="true">
-
                 <div class="col-md-12 ftco-animate">
-                    <img src="{{asset('web/images/images_1/banner_5.png')}}" class="img-fluid" alt="" style="height: 750px;">
+                    <img src="{{asset('web/images/images_1/banner_7.png')}}" class="img-fluid slider-banner" alt="">
                 </div>
 
             </div>
@@ -45,7 +44,68 @@
 
 
 </section>
+<style>
+    /* =========================
+   FINAL SLIDER FIX
+========================= */
 
+    .owl-carousel.home-slider .slider-item {
+        position: relative;
+        overflow: hidden;
+        background: #4b1700;
+        height: auto !important;
+    }
+
+    /* Remove fixed height */
+    .owl-carousel.home-slider .slider-item .slider-text {
+        height: auto !important;
+        min-height: auto !important;
+    }
+
+    /* Remove spacing */
+    .owl-carousel.home-slider .container-fluid,
+    .owl-carousel.home-slider .row,
+    .owl-carousel.home-slider .col-md-12 {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Image perfect fit */
+    .owl-carousel.home-slider .slider-item img {
+        width: 100%;
+        height: auto !important;
+        display: block;
+        object-fit: contain;
+    }
+
+    /* Hide overlay */
+    .owl-carousel.home-slider .slider-item .overlay {
+        display: none;
+    }
+
+    /* Dots position */
+    .owl-carousel.home-slider .owl-dots {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 10px !important;
+        text-align: center;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+
+        .owl-carousel.home-slider .slider-item img {
+            width: 100%;
+            height: auto !important;
+        }
+
+        .owl-carousel.home-slider .owl-dots {
+            bottom: 5px !important;
+        }
+
+    }
+</style>
 <section class="ftco-intro">
     <div class="container-wrap">
         <div class="wrap d-md-flex">

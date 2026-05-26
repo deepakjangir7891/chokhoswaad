@@ -26,7 +26,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('web/images/images_1/logo.png')}}" width="94px;">Chokho Suwaad</a>
+            <a class="navbar-brand" href="{{ url('/') }}"><img src="{{asset('web/images/images_1/logo.png')}}" width="94px;">Chokho Suwad</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
             </button>
@@ -38,6 +38,88 @@
                     <li class="nav-item {{ request()->is('blog*') ? 'active' : '' }}"><a href="{{route('blog')}}" class="nav-link">Blog</a></li>
                     <li class="nav-item {{ request()->is('our-story') ? 'active' : '' }}"><a href="{{route('our-story')}}" class="nav-link">Our Story</a></li>
                     <li class="nav-item {{ request()->is('contact') ? 'active' : '' }}"><a href="{{route('contact')}}" class="nav-link">Contact</a></li>
+
+
+                    @guest
+
+                    <li class="nav-item">
+                        <a href="{{ route('login') }}" class="nav-link">
+                            Login
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{{ route('register') }}" class="nav-link">
+                            Register
+                        </a>
+                    </li>
+
+                    @else
+
+                    <!-- Profile Dropdown -->
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+
+                            <span class="icon-user"></span>
+                            {{ Auth::user()->name }}
+
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right">
+
+                            <!-- Profile -->
+                            <a class="dropdown-item"
+                                href="{{ url('/profile') }}">
+
+                                <span class="icon-user mr-2"></span>
+                                My Profile
+
+                            </a>
+
+                            <!-- Dashboard -->
+                            <a class="dropdown-item"
+                                href="{{ url('/dashboard') }}">
+
+                                <span class="icon-dashboard mr-2"></span>
+                                Dashboard
+
+                            </a>
+
+                            <div class="dropdown-divider"></div>
+
+                            <!-- Logout -->
+                            <a class="dropdown-item"
+                                href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
+
+                                <span class="icon-sign-out mr-2"></span>
+                                Logout
+
+                            </a>
+
+                            <form id="logout-form"
+                                action="{{ route('logout') }}"
+                                method="POST"
+                                style="display: none;">
+
+                                @csrf
+
+                            </form>
+
+                        </div>
+
+                    </li>
+
+                    @endguest
+
                 </ul>
             </div>
         </div>

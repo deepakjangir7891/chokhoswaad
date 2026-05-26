@@ -12,6 +12,7 @@
 */
 
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -28,3 +29,23 @@ Route::get('/blog/{slug}', 'ContentController@showBlog')->name('showBlog');
 Route::get('/service', 'ContentController@service')->name('service');
 Route::get('/product', 'ContentController@product')->name('product');
 Route::get('/addCart', 'ContentController@addCart')->name('addCart');
+
+Route::group(['middleware' => ['auth', 'admin']], function () {
+
+    Route::get('/admin/dashboard', 'Admin\DashboardController@index');
+
+    Route::get('/profile', 'ProfileController@index')->name('profile');
+});
+
+
+
+Route::get('/test-mail', function () {
+
+    Mail::raw('Test Mail From Chokho Swaad Website', function ($message) {
+
+        $message->to('deerdeep120@gmail.com')
+            ->subject('Laravel Gmail Test');
+    });
+
+    return 'Mail Sent Successfully';
+});
