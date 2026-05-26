@@ -27,3 +27,4 @@ Route::get('/blog', 'ContentController@blog')->name('blog');
 Route::get('/blog/{slug}', 'ContentController@showBlog')->name('showBlog');
 Route::get('/service', 'ContentController@service')->name('service');
 Route::get('/product', 'ContentController@product')->name('product');
+Route::get('/addCart', 'ContentController@addCart')->name('addCart');

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<section class="home-slider owl-carousel img" style="background-image: url(web/images/images_1/banner_1.png);">
+<section class="home-slider owl-carousel img" style="background-image: url(web/images/images_1/banner_1.png);background-position-y:bottom">
 
     <div class="slider-item" style="background-image: url(web/images/images_1/banner_1.png);">
         <div class="overlay"></div>

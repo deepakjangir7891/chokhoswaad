@@ -31,4 +31,9 @@ class ContentController extends Controller
     {
         return view('service');
     }
+
+    public  function addCart()
+    {
+        return view('addCart');
+    }
 }

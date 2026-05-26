@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="home-slider owl-carousel img" style="background-image: url(web/images/images_1/banner_1.png);">
+<section class="home-slider owl-carousel img" style="background-image: url(web/images/images_1/banner_1.png);background-position-y:bottom">
 
     <div class="slider-item" style="background-image: url(images/bg_3.jpg);">
         <div class="overlay"></div>
@@ -132,7 +132,7 @@
 </section>
 
 
-<section class="ftco-counter ftco-bg-dark img" id="section-counter" style="background-image: url(images/bg_2.jpg);" data-stellar-background-ratio="0.5">
+<section class="ftco-counter ftco-bg-dark img" id="section-counter" style="background-image: url(web/images/images_1/masaala.png);" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
         <div class="row justify-content-center">
