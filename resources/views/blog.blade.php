@@ -29,7 +29,7 @@
         <div class="row d-flex">
             <div class="col-md-4 d-flex ftco-animate">
                 <div class="blog-entry align-self-stretch">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('web/images/image_1.jpg');">
+                    <a href="{{url('blog/abc')}}" class="block-20" style="background-image: url('web/images/images_1/haldi_powder.png');">
                     </a>
                     <div class="text py-4 d-block">
                         <div class="meta">
@@ -37,14 +37,14 @@
                             <div><a href="#">Admin</a></div>
                             <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                         </div>
-                        <h3 class="heading mt-2"><a href="#">The Delicious Pizza</a></h3>
+                        <h3 class="heading mt-2"><a href="#">Haldi Powder</a></h3>
                         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 d-flex ftco-animate">
                 <div class="blog-entry align-self-stretch">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('web/images/image_2.jpg');">
+                    <a href="{{url('blog/abc')}}" class="block-20" style="background-image: url('web/images/images_1/garam_masala.png');">
                     </a>
                     <div class="text py-4 d-block">
                         <div class="meta">
@@ -52,14 +52,14 @@
                             <div><a href="#">Admin</a></div>
                             <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                         </div>
-                        <h3 class="heading mt-2"><a href="#">The Delicious Pizza</a></h3>
+                        <h3 class="heading mt-2"><a href="#">Garam Masala</a></h3>
                         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 d-flex ftco-animate">
                 <div class="blog-entry align-self-stretch">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('web/images/image_3.jpg');">
+                    <a href="{{url('blog/abc')}}" class="block-20" style="background-image: url('web/images/images_1/dhaniya_powder.png');">
                     </a>
                     <div class="text py-4 d-block">
                         <div class="meta">
@@ -67,14 +67,14 @@
                             <div><a href="#">Admin</a></div>
                             <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                         </div>
-                        <h3 class="heading mt-2"><a href="#">The Delicious Pizza</a></h3>
+                        <h3 class="heading mt-2"><a href="#">Dhaniya Powder</a></h3>
                         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 d-flex ftco-animate">
                 <div class="blog-entry align-self-stretch">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('web/images/image_4.jpg');">
+                    <a href="{{url('blog/abc')}}" class="block-20" style="background-image: url('web/images/images_1/garam_masala.png');">
                     </a>
                     <div class="text py-4 d-block">
                         <div class="meta">
@@ -82,14 +82,14 @@
                             <div><a href="#">Admin</a></div>
                             <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                         </div>
-                        <h3 class="heading mt-2"><a href="#">The Delicious Pizza</a></h3>
+                        <h3 class="heading mt-2"><a href="#">Garam Masala</a></h3>
                         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 d-flex ftco-animate">
                 <div class="blog-entry align-self-stretch">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('web/images/image_5.jpg');">
+                    <a href="{{url('blog/abc')}}" class="block-20" style="background-image: url('web/images/images_1/dhaniya_powder.png');">
                     </a>
                     <div class="text py-4 d-block">
                         <div class="meta">
@@ -97,14 +97,14 @@
                             <div><a href="#">Admin</a></div>
                             <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                         </div>
-                        <h3 class="heading mt-2"><a href="#">The Delicious Pizza</a></h3>
+                        <h3 class="heading mt-2"><a href="#">Dhaniya Powder</a></h3>
                         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 d-flex ftco-animate">
                 <div class="blog-entry align-self-stretch">
-                    <a href="blog-single.html" class="block-20" style="background-image: url('web/images/image_6.jpg');">
+                    <a href="{{url('blog/abc')}}" class="block-20" style="background-image: url('web/images/images_1/haldi_powder.png');">
                     </a>
                     <div class="text py-4 d-block">
                         <div class="meta">
@@ -112,7 +112,7 @@
                             <div><a href="#">Admin</a></div>
                             <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                         </div>
-                        <h3 class="heading mt-2"><a href="#">The Delicious Pizza</a></h3>
+                        <h3 class="heading mt-2"><a href="#">Haldi Powder</a></h3>
                         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                     </div>
                 </div>

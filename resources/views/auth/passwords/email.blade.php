@@ -3,10 +3,10 @@
 @section('content')
 
 <section class="owl-carousel img owl-loaded owl-drag"
-    style="background-image: url({{ asset('web/images/bg_2.jpg') }});">
+    style="background-image: url('/web/images/images_1/masaala.png');background-repeat: no-repeat;background-size: cover;">
 
     <div class="slider-item"
-        style="background-image: url({{ asset('web/images/bg_2.jpg') }});">
+        style="background-image: url('/web/images/images_1/masaala.png');background-repeat: no-repeat;background-size: cover;">
 
         <div class="overlay"></div>
 
